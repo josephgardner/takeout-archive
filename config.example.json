@@ -1,0 +1,21 @@
+{
+  "state_dir": "/volume1/docker/takeout-archive/state",
+  "archive_dir": "/volume1/photo/GoogleArchive/raw",
+  "library_dir": "/volume1/photo/GoogleArchive/library",
+  "rclone_binary": "/volume1/docker/takeout-archive/bin/rclone",
+  "settle_hours": 24,
+  "stale_days": 45,
+  "reminder_days": 30,
+  "accounts": [
+    {
+      "name": "person-one",
+      "remote": "person-one-drive:Takeout",
+      "schedule_expires_on": "2027-01-01"
+    },
+    {
+      "name": "person-two",
+      "remote": "person-two-drive:Takeout",
+      "schedule_expires_on": "2027-01-01"
+    }
+  ]
+}

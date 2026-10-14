@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "takeout-archive"
+version = "0.1.0"
+description = "Headless additive Google Takeout archives for Synology with DSM email reminders"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+takeout-archive = "takeout_archive.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["takeout_archive*"]
